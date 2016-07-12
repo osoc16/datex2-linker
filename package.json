@@ -1,6 +1,6 @@
 {
   "name": "datex2-linker",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "Converting an existing datex2 source to a json-ld accessible page",
   "main": "lib/index.js",
   "bin": {
@@ -11,6 +11,7 @@
   "dependencies": {
     "got": "^6.3.0",
     "httpdispatcher": "^1.0.0",
+    "pug": "^2.0.0-beta3",
     "xml2js": "^0.4.16",
     "yargs": "^4.8.0"
   },

@@ -1,0 +1,28 @@
+mixin parseObject( obj )
+  - let id = obj['@id'] ? obj['@id'].split('#')[1] : false
+  div(id=id).term--object
+    each val in obj
+      if typeof val === 'string'
+        span= val
+      else if typeof val === 'object'
+        +parseObject( val )
+
+doctype html
+html(lang="en")
+  head
+    title terms
+    style.
+      body {
+        font-family: -apple-system, sans-serif;
+      }
+      .term--object {
+        margin-left: 1em;
+      }
+      :target {
+        outline: 1px solid black;
+      }
+  body
+    h1 Terms
+    #terms
+      pre
+        +parseObject(locals.data)

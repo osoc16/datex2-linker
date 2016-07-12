@@ -23,11 +23,11 @@ If there are issues with combining this and your existing (valid) datex2, you sh
 # Features
 
 - [x] parse xml to json
-- [ ] give each id an unique URI
-- [ ] make that URI accessible on the web
-- [ ] make an easy cli interface to start
+- [x] give each id an unique URI
+- [x] make that URI accessible on the web
+- [x] make an easy cli interface to start
 - [ ] test with a lot of datafeeds
-- [ ] publish on npm
+- [x] publish on npm
 
 If you have an issue that the context does not contain a particular term, open an issue on [OpenTransport/linked-datex2](https://github.com/OpenTransport/linked-datex2).
 
