@@ -15,7 +15,7 @@ $ npm install -g datex2-linker
 $ datex2-linker serve --source "http://www.verkeerscentrum.be/uitwisseling/datex2full" --base "http://localhost:8000/" --port 8000
 ```
 
-Then you should be able to find a list of all of the terms at `/terms#`, a data source in [`json-ld`](http://json-ld.org) at `/data.jsonld` and `/data.json`.
+Then you should be able to find a list of all of the terms at `/terms#`, a data source in [`json-ld`](http://json-ld.org) at `/data.jsonld` and `/data.json`. At `/` there's some information about datex2, and other relevant links.
 
 If there are issues with combining this and your existing (valid) datex2, you should either open an issue or send a message on [gitter](https://gitter.im/oSoc16).
 

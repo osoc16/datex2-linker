@@ -1,9 +1,11 @@
 mixin parseObject( obj )
   - let id = obj['@id'] ? obj['@id'].split('#')[1] : false
-  div(id=id).term--object
-    each val in obj
-      if typeof val === 'string'
-        span= val
+  dl(id=id).term--object
+    each val,key in obj
+      //- dt #{Object.keys(obj)}:&nbsp;
+      dt #{key}:&nbsp;
+      if typeof val !== 'object'
+        dd #{val}
       else if typeof val === 'object'
         +parseObject( val )
 
@@ -21,8 +23,25 @@ html(lang="en")
       :target {
         outline: 1px solid black;
       }
+      pre {
+        font-family: Menlo, Courier New, monospace;
+      }
+      dt, dd {
+        margin: .5em;
+      }
+      dt {
+        float: left;
+        clear: both;
+      }
+      dd {
+        float: left;
+        clear: after;
+      }
   body
     h1 Terms
+    p generated via #[a(href='https://github.com/osoc16/datex2-linker') datex2-linker]
     #terms
       pre
-        +parseObject(locals.data)
+        +parseObject(locals.json)
+    //- #all
+    //-   pre #{JSON.stringify(locals.json)}
