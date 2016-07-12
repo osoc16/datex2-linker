@@ -1,6 +1,6 @@
 # Datex2 Linker
 
-> creating an accessible and standard JSON-LD page from an existing
+> creating an accessible and standard JSON-LD page from an existing datex2 feed
 
 # Getting started
 
