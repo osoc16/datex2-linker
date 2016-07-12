@@ -1,0 +1,16 @@
+doctype html
+html(lang="en")
+  head
+    title #{locals.title}
+    style.
+      body {
+        font-family: -apple-system, sans-serif;
+      }
+      code {
+        font-family: Menlo, monospace;
+      }
+  body
+    h1 #{locals.title}
+    p Generated via #[a(href='https://github.com/osoc16/datex2-linker') datex2-linker]
+    p You can find the #[code json-ld] at #[a(href='/data.json') /data.json] or #[a(href='/data.jsonld') /data.jsonld]
+    blockquote TODO: make this into a better landing page that fits in with moby link
