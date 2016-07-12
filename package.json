@@ -10,6 +10,7 @@
   "license": "Apache-2.0",
   "dependencies": {
     "got": "^6.3.0",
+    "httpdispatcher": "^1.0.0",
     "xml2js": "^0.4.16",
     "yargs": "^4.8.0"
   },

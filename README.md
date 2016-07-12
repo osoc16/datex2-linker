@@ -33,6 +33,6 @@ If you have an issue that the context does not contain a particular term, open a
 
 # License
 
-© 2016 open Summer of code 2016 — Haroen Viaene and [contributors](https://github.com/oSoc16/datex2-linker/graphs/contributors)
+© 2016 - Open Knowledge Belgium - iMinds — Haroen Viaene and [contributors](https://github.com/oSoc16/datex2-linker/graphs/contributors)
 
 Licensed under the Apache 2.0 license.
