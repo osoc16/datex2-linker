@@ -28,6 +28,7 @@
     "ava": "^0.15.2"
   },
   "scripts": {
-    "test": "ava --verbose"
+    "test": "ava --verbose",
+    "bin": "lib/index.js"
   }
 }
