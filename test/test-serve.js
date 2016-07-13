@@ -25,7 +25,7 @@ test('serves an index', async t => {
 }
 code {
   font-family: Menlo, monospace;
-}</style></head><body><h1>title</h1><p>Generated via <a href="https://github.com/osoc16/datex2-linker">datex2-linker</a></p><p>You can find the <code>json-ld</code> at <a href="/data.json">/data.json</a> or <a href="/data.jsonld">/data.jsonld</a></p><blockquote>TODO: make this into a better landing page that fits in with moby link</blockquote></body></html>`)
+}</style></head><body><h1>title</h1><p>Generated via <a href="https://github.com/osoc16/datex2-linker">datex2-linker</a></p><p>You can find the <code>json-ld</code> at <a href="/data.json">/data.json</a> or <a href="/data.jsonld">/data.jsonld</a></p><blockquote>TODO: make this into a better landing page that fits in with moby link</blockquote></body></html>`);
 });
 
 test('content type of data.json is application/json', async t => {
