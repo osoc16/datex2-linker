@@ -24,5 +24,5 @@ test('served xml converts id to @id', async t => {
   });
   server.listen('4001');
   const json = JSON.stringify(await parse('http://localhost:4001', 'http://test.dev/datex/'));
-  t.is(json, '{"@context":{"@base":"http://vocab.datex.org/terms#"},"@graph":{"d2LogicalModel":{"xmlns":"//datex2.eu/schema/2/2_0","modelBaseVersion":2,"@id":"http://test.dev/datex/data.jsonld#azertyuiop"}}}');
+  t.is(json, '{"@context":{"@base":"http://vocab.datex.org/terms#"},"@graph":{"d2LogicalModel":{"xmlns":"//datex2.eu/schema/2/2_0","modelBaseVersion":"2","@id":"http://test.dev/datex/data.jsonld#azertyuiop"}}}');
 });
