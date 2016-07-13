@@ -22,5 +22,11 @@
   "bugs": {
     "url": "https://github.com/oSoc16/datex2-linker/issues"
   },
-  "homepage": "https://github.com/oSoc16/datex2-linker#readme"
+  "homepage": "https://github.com/oSoc16/datex2-linker#readme",
+  "devDependencies": {
+    "ava": "^0.15.2"
+  },
+  "scripts": {
+    "test": "ava --verbose"
+  }
 }
