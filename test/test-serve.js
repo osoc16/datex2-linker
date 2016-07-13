@@ -34,7 +34,6 @@ test('content type of data.json is application/json', async t => {
     somethingElse: 'with value'
   }, url.parse('http://localhost:4004'), 'title', true);
   const contentType = await got('http://localhost:4004/data.json').then(res => {
-    // todo: return content type
     return Promise.resolve(res.headers['content-type']);
   });
   t.is(contentType, 'application/json');
@@ -46,7 +45,6 @@ test('content type of data.jsonld is application/ld+json', async t => {
     somethingElse: 'with value'
   }, url.parse('http://localhost:4005'), 'title', true);
   const contentType = await got('http://localhost:4005/data.jsonld').then(res => {
-    // todo: return content type
     return Promise.resolve(res.headers['content-type']);
   });
   t.is(contentType, 'application/ld+json');
