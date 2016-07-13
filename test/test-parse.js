@@ -3,7 +3,7 @@ import http from 'http';
 import parse from '../lib/parse.js';
 
 test('served xml is converted to json', async t => {
-  let server = http.createServer(function(req, res) {
+  const server = http.createServer(function(req, res) {
     res.end(`
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <string someremovednamespace:attribute="value">
@@ -16,7 +16,7 @@ test('served xml is converted to json', async t => {
 });
 
 test('served xml converts id to @id', async t => {
-  let server = http.createServer(function(req, res) {
+  const server = http.createServer(function(req, res) {
     res.end(`
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <d2LogicalModel xmlns="http://datex2.eu/schema/2/2_0" modelBaseVersion="2" id="azertyuiop">
