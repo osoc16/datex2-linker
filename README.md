@@ -2,6 +2,9 @@
 
 > creating an accessible and standard JSON-LD page from an existing datex2 feed
 
+[![Build Status](https://travis-ci.org/osoc16/datex2-linker.svg?branch=master)](https://travis-ci.org/osoc16/datex2-linker)
+[![npm version](https://badge.fury.io/js/datex2-linker.svg)](https://www.npmjs.com/package/datex2-linker)
+
 # Getting started
 
 ## installing
@@ -26,7 +29,7 @@ If there are issues with combining this and your existing (valid) datex2, you sh
 - [x] give each id an unique URI
 - [x] make that URI accessible on the web
 - [x] make an easy cli interface to start
-- [ ] test with a lot of datafeeds
+- [x] test with a lot of datafeeds
 - [x] publish on npm
 
 If you have an issue that the context does not contain a particular term, open an issue on [OpenTransport/linked-datex2](https://github.com/OpenTransport/linked-datex2).
