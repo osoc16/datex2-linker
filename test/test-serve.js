@@ -7,14 +7,14 @@ test('starts serving', t => {
   serve({
     something: 'its value',
     somethingElse: 'with value'
-  }, url.parse('http://localhost:4002'), 'title');
+  }, url.parse('http://localhost:4002'), 'title', true);
 });
 
 test('serves an index', async t => {
   await serve({
     something: 'its value',
     somethingElse: 'with value'
-  }, url.parse('http://localhost:4003'), 'title');
+  }, url.parse('http://localhost:4003'), 'title', true);
   const response = await got('http://localhost:4003').then(res => {
     return Promise.resolve(res.body);
   });
@@ -32,7 +32,7 @@ test('content type of data.json is application/json', async t => {
   await serve({
     something: 'its value',
     somethingElse: 'with value'
-  }, url.parse('http://localhost:4004'), 'title');
+  }, url.parse('http://localhost:4004'), 'title', true);
   const contentType = await got('http://localhost:4004/data.json').then(res => {
     // todo: return content type
     return Promise.resolve(res.headers['content-type']);
@@ -44,7 +44,7 @@ test('content type of data.jsonld is application/ld+json', async t => {
   await serve({
     something: 'its value',
     somethingElse: 'with value'
-  }, url.parse('http://localhost:4005'), 'title');
+  }, url.parse('http://localhost:4005'), 'title', true);
   const contentType = await got('http://localhost:4005/data.jsonld').then(res => {
     // todo: return content type
     return Promise.resolve(res.headers['content-type']);
