@@ -1,7 +1,7 @@
 import test from 'ava';
 import url from 'url';
 import got from 'got';
-import serve from '../lib/serve.js';
+import serve from './lib/serve.js';
 import http from 'http';
 
 const server = http.createServer(function(req, res) {

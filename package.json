@@ -9,12 +9,11 @@
   "author": "open Summer of code 2016",
   "license": "Apache-2.0",
   "dependencies": {
+    "datex2-linker-api": "0.0.1",
     "got": "^6.3.0",
     "httpdispatcher": "^1.0.0",
     "opener": "^1.4.1",
-    "pug": "^2.0.0-beta3",
-    "xml2js": "^0.4.16",
-    "yargs": "^4.8.0"
+    "pug": "^2.0.0-beta3"
   },
   "repository": {
     "type": "git",
