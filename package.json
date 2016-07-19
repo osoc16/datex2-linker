@@ -9,7 +9,7 @@
   "author": "open Summer of code 2016",
   "license": "Apache-2.0",
   "dependencies": {
-    "datex2-linker-api": "0.0.1",
+    "datex2-linker-api": "0.2.0",
     "got": "^6.3.0",
     "httpdispatcher": "^1.0.0",
     "opener": "^1.4.1",
