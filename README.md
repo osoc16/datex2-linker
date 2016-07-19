@@ -1,4 +1,4 @@
-<h1 align="center"><img src="https://cdn.rawgit.com/osoc16/datex2-linker/master/logo.svg" alt="Datex II linker" height="70"></h1>
+<h1 align="center"><a href="https://github.com/osoc16/datex2-linker"><img src="https://cdn.rawgit.com/osoc16/datex2-linker/master/logo.svg" alt="Datex II linker" height="70"></a></h1>
 
 > creating an accessible and standard JSON-LD page from an existing datex2 feed
 
