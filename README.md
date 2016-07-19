@@ -1,4 +1,4 @@
-# Datex2 Linker
+<h1 align="center"><img src="logo.svg" alt="Datex II linker" height="70"></h1>
 
 > creating an accessible and standard JSON-LD page from an existing datex2 feed
 
