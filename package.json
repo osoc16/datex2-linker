@@ -13,7 +13,8 @@
     "got": "^6.3.0",
     "httpdispatcher": "^1.0.0",
     "opener": "^1.4.1",
-    "pug": "^2.0.0-beta3"
+    "pug": "^2.0.0-beta3",
+    "yargs": "^4.8.1"
   },
   "repository": {
     "type": "git",
@@ -24,10 +25,14 @@
   },
   "homepage": "https://github.com/oSoc16/datex2-linker#readme",
   "devDependencies": {
-    "ava": "^0.15.2"
+    "ava": "^0.15.2",
+    "xo": "^0.16.0"
   },
   "scripts": {
-    "test": "ava --verbose",
+    "test": "xo && ava --verbose",
     "bin": "lib/index.js"
+  },
+  "xo": {
+    "space": true
   }
 }
