@@ -1,10 +1,10 @@
-import test from 'ava';
 import url from 'url';
+import http from 'http';
+import test from 'ava';
 import got from 'got';
 import serve from './lib/serve.js';
-import http from 'http';
 
-const server = http.createServer(function(req, res) {
+const server = http.createServer((req, res) => {
   res.end(`
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <string someremovednamespace:attribute="value">
@@ -19,11 +19,9 @@ test('starts serving', t => {
 
 test('serves an index', async t => {
   await serve('http://localhost:8000/', url.parse('http://localhost:4003'), 'title', true);
-  const response = await got('http://localhost:4003').then(res => {
-    return Promise.resolve(res.body);
-  });
+  const res = await got('http://localhost:4003');
   // todo: change this when the index changes looks
-  t.is(response,
+  t.is(res.body,
     `<!DOCTYPE html><html lang="en"><head><title>title</title><style>body {
   font-family: -apple-system, sans-serif;
 }
@@ -34,16 +32,12 @@ code {
 
 test('content type of data.json is application/json', async t => {
   await serve('http://localhost:8000/', url.parse('http://localhost:4004'), 'title', true);
-  const contentType = await got('http://localhost:4004/data.json').then(res => {
-    return Promise.resolve(res.headers['content-type']);
-  });
-  t.is(contentType, 'application/json');
+  const res = await got('http://localhost:4004/data.json');
+  t.is(res.headers['content-type'], 'application/json');
 });
 
 test('content type of data.jsonld is application/ld+json', async t => {
   await serve('http://localhost:8000/', url.parse('http://localhost:4005'), 'title', true);
-  const contentType = await got('http://localhost:4005/data.jsonld').then(res => {
-    return Promise.resolve(res.headers['content-type']);
-  });
-  t.is(contentType, 'application/ld+json');
+  const res = await got('http://localhost:4005/data.jsonld')
+  t.is(res.headers['content-type'], 'application/ld+json');
 });
