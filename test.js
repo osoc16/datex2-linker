@@ -13,8 +13,8 @@ const server = http.createServer((req, res) => {
 });
 server.listen('8000');
 
-test('starts serving', t => {
-  serve('http://localhost:8000/', url.parse('http://localhost:4002'), 'title', true);
+test('starts serving', () => {
+  return serve('http://localhost:8000/', url.parse('http://localhost:4002'), 'title', true);
 });
 
 test('serves an index', async t => {
@@ -38,6 +38,6 @@ test('content type of data.json is application/json', async t => {
 
 test('content type of data.jsonld is application/ld+json', async t => {
   await serve('http://localhost:8000/', url.parse('http://localhost:4005'), 'title', true);
-  const res = await got('http://localhost:4005/data.jsonld')
+  const res = await got('http://localhost:4005/data.jsonld');
   t.is(res.headers['content-type'], 'application/ld+json');
 });
