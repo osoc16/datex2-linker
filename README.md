@@ -15,7 +15,7 @@ Install `datex2-linker`
 
 ```sh
 $ npm install -g datex2-linker
-$ datex2-linker serve --source "http://www.verkeerscentrum.be/uitwisseling/datex2full" --base "http://localhost:8000/" --port 8000
+$ datex2-linker --source "http://www.verkeerscentrum.be/uitwisseling/datex2full" --base "http://localhost:8000/" --port 8000
 ```
 
 Then you should be able to find a data source in [`json-ld`](http://json-ld.org) at `/data.jsonld` and `/data.json`. At `/` there's some information about datex2, and other relevant links.
