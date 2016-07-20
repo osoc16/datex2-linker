@@ -33,6 +33,7 @@
     "bin": "lib/index.js"
   },
   "xo": {
-    "space": true
+    "space": true,
+    "esnext": true
   }
 }
