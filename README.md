@@ -7,7 +7,7 @@
 
 # Getting started
 
-## installing
+## Installing
 
 Make sure you have [node](https://nodejs.org/en/download/) and npm installed.
 
@@ -15,10 +15,21 @@ Install `datex2-linker`
 
 ```sh
 $ npm install -g datex2-linker
+```
+
+## Running
+
+To run it with a provided data source, you can use the `datex2-linker` program.
+
+```sh
 $ datex2-linker --source "http://www.verkeerscentrum.be/uitwisseling/datex2full" --base "http://localhost:8000/" --port 8000
 ```
 
-Then you should be able to find a data source in [`json-ld`](http://json-ld.org) at `/data.jsonld` and `/data.json`. At `/` there's some information about datex2, and other relevant links.
+Then you should be able to find a data source in [`json-ld`](http://json-ld.org) at `/data.jsonld` and `/data.json`. At `/` there's some information about datex2, and other relevant links. The index will look like this:
+
+
+![screenshot of the index page of datex2-linker ran with Finnish data](screenshot.png)
+
 
 If there are issues with combining this and your existing (valid) datex2, you should either open an issue or send a message on [gitter](https://gitter.im/oSoc16).
 
